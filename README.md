@@ -43,7 +43,7 @@ O(1)
 ````
 ## Como rodar o programa?
 
-Clone o repositório no seu terminal
+Clone o repositório
 
 ```
 git clone https://github.com/M-Aparecida/ShellSort
