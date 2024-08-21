@@ -41,5 +41,17 @@ Não requer espaço adicional além do necessário para armazenar os dados de en
 ````
 O(1)
 ````
+## Como rodar o programa?
 
+Clone o repositório no seu terminal
+
+```
+git clone https://github.com/M-Aparecida/ShellSort
+```
+
+Vá até o diretório onde o arquivo .c se encontra, e no terminal use o seguinte comando
+```
+gcc main.c produtos.c -o produtos_precos
+./produtos_precos
+```
 
