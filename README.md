@@ -13,10 +13,10 @@
 ``` c
 void ordenarProdutosPorPreco(Produto* produtos, int n) {
     for (int gap = n / 2; gap > 0; gap /= 2) { // O laço define o gap, começando com metade do tamanho do array e reduzindo-o pela metade em cada finalização
-        for (int i = gap; i < n; i++) { //percorre o array a partir do índice gap até o final.
+        for (int i = gap; i < n; i++) { //percorre o array a partir do índice gap até o final
             Produto temp = produtos[i]; //armazena o produto atual em uma variável temporária
             int j; //declara uma variável para o laço de inserção
-            for (j = i; j >= gap && produtos[j - gap].preco > temp.preco; j -= gap) { // Move os produtos maiores para a posição correta, comparando o preço do produto atual com os produtos que estão gap posições atrás.
+            for (j = i; j >= gap && produtos[j - gap].preco > temp.preco; j -= gap) { // Move os produtos maiores para a posição correta, comparando o preço do produto atual com os produtos que estão gap posições atrás
                 produtos[j] = produtos[j - gap]; // desloca o produto maior para a frente no array
             }
             produtos[j] = temp;  //insere o produto temporário na posição correta após o loop interno.
