@@ -11,8 +11,8 @@
 
 ## Implementação
 ``` c
-void ordenarProdutosPorPreco(Produto* produtos, int n) {
-    for (int gap = n / 2; gap > 0; gap /= 2) { // O laço define o gap, começando com metade do tamanho do array e reduzindo-o pela metade em cada finalização
+void ordenarProdutosPorPreco(Produto* produtos, int n) { //função responsável por ordenar os produtos através do Algoritmo de Ordenação Shell Sort
+    for (int gap = n / 2; gap > 0; gap /= 2) { //o laço define o gap, começando com metade do tamanho do array e reduzindo-o pela metade em cada finalização
         for (int i = gap; i < n; i++) { //percorre o array a partir do índice gap até o final
             Produto temp = produtos[i]; //armazena o produto atual em uma variável temporária
             int j; //declara uma variável para o laço de inserção
